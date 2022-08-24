@@ -1,0 +1,442 @@
+body {
+  box-sizing: border-box;
+  color: #383838;
+  font-family: Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+header {
+  background-color: teal;
+  padding: 1rem 5vw;
+}
+
+footer {
+  background-color: teal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 5vw;
+}
+
+footer > a {
+  text-align: center;
+  padding: 12px;
+  width: 35%;
+}
+
+main {
+  margin: 4rem auto 6rem;
+  max-width: 650px;
+  width: 90vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > div > a[rel="donate"] {
+  background-color: darkblue;
+  border-radius: 10px;
+  padding: 12px 18px;
+}
+
+video {
+  width: 100%;
+}
+
+#home-donation-form {
+  margin: 0 auto;
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+#home-donation-form > button {
+  background-color: darkblue;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-family: inherit;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  width: 50%;
+}
+
+.bg-img {
+  background-image: url("./assets/15.jpeg");
+  background-size: cover;
+}
+
+.center-text {
+  background-color: lightgrey;
+  font-size: 18px;
+  padding: 24px;
+  text-align: center;
+}
+
+.donation-type {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.donation-type > button {
+  background-color: darkblue;
+  border: 1px solid darkblue;
+  border-radius: 15px 0 0 15px;
+  color: white;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 8px 24px;
+}
+
+.donation-type > button:nth-child(2) {
+  background-color: white;
+  border-radius: 0 15px 15px 0;
+  color: darkblue;
+}
+
+.abf-flex {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 12px 24px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+
+.abf-info {
+  color: white;
+  padding-top: 100px;
+  width: 500px;
+}
+
+.abf-form {
+  width: 550px;
+}
+
+.flex > div {
+  background-color: lightgray;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin: 12px;
+  padding: 12px 18px;
+}
+
+.form-container {
+  background-color: rgb(246, 246, 246);
+  border-radius: 10px;
+  margin: 24px auto;
+}
+
+.home-image {
+  width: 50%;
+}
+
+.on-page-nav-link {
+  background-color: darkblue;
+  border-radius: 5px;
+  display: block;
+  margin: 24px auto;
+  padding: 12px 24px;
+  text-align: center;
+  width: 250px;
+}
+
+.scholar-card,
+.sponsor-card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.scholar-card > img,
+.sponsor-card > img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.scholar-card > p,
+.sponsor-card > p {
+  font-weight: bold;
+  padding-top: 8px;
+  text-align: left;
+}
+
+.scholars-container,
+.sponsors-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  padding: 0 60px;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.about-blurb {
+  background-color: white !important;
+  width: 60%;
+}
+
+.about-blurb:nth-child(2) {
+  background-color: white !important;
+  width: 40%;
+}
+
+.board-member {
+  width: 45%;
+}
+
+.board-member > img {
+  width: 100%;
+}
+
+.founder,
+.board-member {
+  display: block;
+  border-left: solid 3px #6e7491;
+  border-right: solid 3px #6e7491;
+  width: 45%;
+}
+
+.founder > img {
+  width: 45%;
+}
+
+.founder > p:first-of-type {
+  margin-top: 36px;
+}
+
+.info-box {
+  background-color: rgba(247, 252, 255);
+  background-position: right 35% bottom 45%;
+  border: solid 1px #6e7491;
+  text-align: center;
+}
+
+.info-box > p:first-of-type {
+  color: goldenrod;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.tulsa-people-img {
+  width: 45%;
+}
+
+.scholar-container {
+  display: block;
+  margin: 0 auto 24px auto;
+  width: 75%;
+}
+
+.scholar-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.scholar-card {
+  width: 30%;
+}
+
+.scholar-card > p {
+  margin: 0;
+}
+
+.contact-container,
+.scholarship-container {
+  line-height: 1.5em;
+  margin: 0.65em auto;
+  width: 500px;
+}
+
+.contact-title {
+  border-bottom: 10px solid goldenrod;
+  line-height: 0.35em;
+  margin: 0.65em auto;
+  width: fit-content;
+}
+
+.divider {
+  background-color: #6e7491;
+  height: 1px;
+  margin: 36px 0;
+}
+
+.contact-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.contact-card {
+  text-align: center;
+  width: 30%;
+}
+
+.contact-card > img {
+  width: 5em;
+}
+
+.donate-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.donate-blurb {
+  width: 45%;
+}
+
+.donate-blurb > img {
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+  width: 250px;
+}
+
+.donate-facts {
+  margin-bottom: 42px;
+}
+
+.donor-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.donor-list > ul {
+  border-bottom: 2px solid darkblue;
+  border-right: 1px solid #6e7491;
+  border-radius: 12px;
+  list-style: none;
+  padding: 24px;
+  width: 25%;
+}
+
+.donor-list > ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: goldenrod;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.donor-list > ul li {
+  margin: auto;
+  padding-bottom: 5px;
+  width: 80%;
+}
+
+.donate-collage {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.donate-collage div {
+  width: 25%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image01 {
+  background-image: url("./assets/jazmine_hill.jpeg");
+}
+.image02 {
+  background-image: url("./assets/ramirez.bmp");
+}
+.image03 {
+  background-image: url("./assets/jayne_w_students.jpeg");
+}
+.image04 {
+  background-image: url("./assets/christina_armstrong.jpeg");
+}
+.image05 {
+  background-image: url("./assets/tulsa_people_cover.jpeg");
+}
+.image06 {
+  background-image: url("./assets/harold_phillips.jpeg");
+}
+.image07 {
+  background-image: url("./assets/celecia_chasengnou.jpg");
+}
+.image08 {
+  background-image: url("./assets/krystal_martinez.jpeg");
+}
+.image09 {
+  background-image: url("./assets/vishnu_sridhar.jpeg");
+}
+.image10 {
+  background-image: url("./assets/emily_arnold.jpeg");
+}
+.image11 {
+  background-image: url("./assets/addie_marsh.jpeg");
+}
+.image12 {
+  background-image: url("./assets/simon_ok_mag.jpeg");
+}
+
+.scholarship-testimonials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.testimonial-card {
+  border-bottom: 2px solid darkblue;
+  border-right: 1px solid #6e7491;
+  border-radius: 12px;
+  margin-bottom: 36px;
+  margin-top: 36px;
+  padding: 24px;
+  width: 25%;
+}
+
+.scholarship-img {
+  width: 80%;
+}
+
+.email-link {
+  color: goldenrod;
+}
+
+@media screen and (max-width: 400px) {
+  .donate-collage {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .donate-collage div {
+    width: 100%;
+  }
+}
