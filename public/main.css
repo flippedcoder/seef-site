@@ -112,7 +112,8 @@ video {
   padding: 12px 24px;
 }
 
-.flex {
+.flex,
+.story-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -196,6 +197,14 @@ video {
   display: block;
   margin: 0 auto;
   width: 80%;
+}
+
+.about-flex,
+.story-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 24px;
 }
 
 .about-blurb {
@@ -433,25 +442,98 @@ video {
 }
 
 @media screen and (max-width: 500px) {
-  .donate-collage {
-    flex-direction: column;
-    flex-wrap: no-wrap;
+  .container {
+    padding: 0 24px;
   }
-  .donate-collage div {
+  .donate-collage,
+  .about-flex,
+  .contact-flex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .donate-collage div,
+  .donate-flex,
+  .donate-blurb,
+  .abf-form,
+  .abf-info,
+  .founders-flex,
+  .board-flex,
+  .contact-container,
+  .scholarship-container,
+  .about-blurb:nth-child(2),
+  .testimonial-card,
+  .founder > img,
+  .contact-flex > div {
     width: 100%;
   }
-  .donate-flex {
+  .donate-flex,
+  .story-flex {
     flex-wrap: wrap-reverse;
   }
-  .donate-blurb {
-    width: 100%;
-  }
-  .donor-list {
+  .donor-list,
+  .abf-flex {
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
+  }
+  .abf-flex {
+    padding: 12px 5px;
+  }
+  .abf-info {
+    padding: 0 12px;
   }
   .donor-list > ul {
     padding: 0 0 24px 0;
     width: 100%;
+  }
+  .bg-img {
+    flex-wrap: wrap-reverse;
+    width: fit-content;
+  }
+  .scholars-container,
+  .sponsors-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav {
+    flex-flow: row wrap;
+  }
+  nav > div {
+    padding: 5px;
+  }
+  nav > div:nth-last-child(1) {
+    margin-top: 8px;
+  }
+  .scholar-card {
+    padding: 5px;
+    width: 100%;
+  }
+  .about-blurb {
+    width: 100%;
+  }
+  .tulsa-people-img {
+    display: block;
+    width: 100%;
+  }
+  .about-flex,
+  .about-flex > div,
+  .story-flex,
+  .about-blurb {
+    margin: 0;
+    padding: 0;
+  }
+  .founder > p,
+  .board-member > p {
+    padding: 0 12px;
+  }
+  .founder,
+  .board-member {
+    border: unset;
+    margin-bottom: 36px !important;
+  }
+  .story-flex {
+    flex-wrap: wrap-reverse;
+  }
+  .contact-flex > div {
+    margin-bottom: 24px;
   }
 }
