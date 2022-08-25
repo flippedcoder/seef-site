@@ -364,7 +364,7 @@ video {
 
 .donate-collage div {
   width: 25%;
-  height: 240px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -384,6 +384,7 @@ video {
 }
 .image05 {
   background-image: url("./assets/tulsa_people_cover.jpeg");
+  background-position: top !important;
 }
 .image06 {
   background-image: url("./assets/harold_phillips.jpeg");
@@ -431,12 +432,26 @@ video {
   color: goldenrod;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .donate-collage {
     flex-direction: column;
     flex-wrap: no-wrap;
   }
   .donate-collage div {
+    width: 100%;
+  }
+  .donate-flex {
+    flex-wrap: wrap-reverse;
+  }
+  .donate-blurb {
+    width: 100%;
+  }
+  .donor-list {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .donor-list > ul {
+    padding: 0 0 24px 0;
     width: 100%;
   }
 }
